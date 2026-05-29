@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/ssb-no",
+  "title": "Ssb No",
+  "description": "Statistics Norway (SSB) PxWebApi MCP.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/ssb-no",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-ssb-no",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/ssb-no/mcp"
+    }
+  ]
+}
