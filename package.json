@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ssb-no",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Statistics Norway (SSB) PxWebApi MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ssb-no",
     "gatewaySlug": "ssb-no",
-    "sourceHash": "v1-2b80affb954d233fc1b6dd5ae5ba4f5f9973278ebb527b5e3e2b24c9a40ad276",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-70e3f8c0b31cc22bc8fdf376ac87bc6a2359689950adf577396f19934f5885e2",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }

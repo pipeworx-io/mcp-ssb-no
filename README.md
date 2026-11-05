@@ -2,7 +2,7 @@
 
 Statistics Norway (SSB) PxWebApi MCP.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1857+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1866+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
@@ -11,6 +11,7 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
 | `subjects` | Navigate the subject tree. Pass a node id path under /table/ (default empty = root list of subjects). Each level returns child nodes ({id, type, text}); type "l" is a folder, "t" is a leaf table whose id is the numeric table id used by table_meta/query_table. e.g. path "" -> subjects, "be" -> Population, "be05" -> Population count tables. |
 | `table_meta` | Table definition (variables/dimensions and valid values). id is the numeric SSB table id, e.g. "07459". |
 | `query_table` | Pull data from a table. id is the numeric SSB table id; body is a PxWeb query object. Omitted dimensions with elimination collapse; otherwise select values per dimension. |
+| `ssb_no_classification` | Look up a Statistics Norway (SSB) KLASS classification (code list) and its correspondences, valid at a date or year. Answers e.g. "which KOSTRA group is Bergen in, 2025?" (id 112 = KOSTRA municipality groups, mapped to id 131 = municipalities by default) and lists all municipalities in a county (code_prefix "46" = Vestland) with their KOSTRA group for each of several years. Other ids: 131 municipalities, 104 counties. Without id lists classifications. Unknown id returns found:false. Source: Statistics Norway (SSB), KLASS classification service. |
 
 ## Quick Start
 
@@ -56,7 +57,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1857+ data sources. The
+Both URLs reach the same gateway and the same 1866+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 
